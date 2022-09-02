@@ -10,6 +10,8 @@
 <ul>
     @foreach (var customer in Model.Customer)
     {
-        <li class="">@customer.Name</li>
+        <li>
+            <a href="Customers/customers/@customer.Id">@customer.Name</a>
+        </li>
     }
 </ul>
