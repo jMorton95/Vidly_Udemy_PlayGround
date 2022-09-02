@@ -18,7 +18,11 @@ namespace Udemy_ASP.NET_MVC5_Vidly.Controllers
                 new Customer { Name = "Geoffrey" }
             };
 
-            var viewModel = customers;
+            var viewModel = new CustomersViewModel()
+            {
+                Customer = customers
+            };
+                
             return View(viewModel);
         }
     }

@@ -5,11 +5,11 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>@Model.Customer</h2>
+<h2>Customers:</h2>
 
 <ul>
     @foreach (var customer in Model.Customer)
     {
-        <li class="">@customer</li>
+        <li class="">@customer.Name</li>
     }
 </ul>
