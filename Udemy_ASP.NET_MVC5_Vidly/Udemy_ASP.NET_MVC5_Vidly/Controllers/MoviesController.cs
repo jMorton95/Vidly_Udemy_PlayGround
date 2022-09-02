@@ -15,14 +15,14 @@ namespace Udemy_ASP.NET_MVC5_Vidly.Controllers
         {
             var movie = new Movie() { Name = "Shrek!" };
             var customers = new List<Customer> {
-                new Customer { Name = "Customer 1" },
-                new Customer { Name = "Customer 2" }
+                new Customer { Name = "James" },
+                new Customer { Name = "Geoffrey" }
             };
 
-            var viewModel = new RandomMovieViewModel()
+            var viewModel = new CustomersViewModel()
             {
                 Movie = movie,
-                Customers = customers
+                Customer = customers
             };
 
             return View(viewModel);

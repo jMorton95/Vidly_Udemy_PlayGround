@@ -13,7 +13,11 @@ namespace Udemy_ASP.NET_MVC5_Vidly
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapMvcAttributeRoutes();
+           /* routes.MapRoute(
+                name: "Customer",
+                url: "{controller/{customer}",
+                defaults: new { controller = "Customer", action = "Index" }
+                );*/
 
             routes.MapRoute(
                 name: "Default",
